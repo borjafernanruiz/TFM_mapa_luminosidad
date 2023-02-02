@@ -7,7 +7,7 @@
             L_DISABLE_3D = false;
         </script>
     
-    <style>html, body {width: 100%;height: 93.5%;margin:0;padding: 0.5%}</style>
+    <style>html, body {width: 100%;height: 93%;margin:0;padding: 0.5%}</style>
     <body style="background-color:#d2e4e4;"></body>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -68,15 +68,29 @@
         }
           
         </style>
+        <style>
+  
+            .alinearizq {
+               float: left;
+             }
+            .alinearder {
+              float: right;
+             }    
+        </style>
        
 </head>
 <body>    
      <section>  
-        <form method="get" action="Magnitudes.html">
-            Este mapa ha sido elaborado en base a datos de satélite del VIIRS-DNB y de las redes de fotómetros de los proyectos EELabs y Star4all.     &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp      <button class="boton" type="submit">Cambiar a Escala en magnitudes  </button> 
-        </form> 
-        Puede consultar el funcionamiento de la Escala Bortle <A HREF="https://www.handprint.com/ASTRO/bortle.html"> aquí </A>     
-         <p><b>Semana del <span id="demo"></span></b></p> 
+        <form method="get" action="index.html">
+            Este mapa ha sido elaborado en base a datos de satélite del VIIRS-DNB y de las redes de fotómetros de los proyectos EELabs y Star4all. Puede consultar el funcionamiento de la Escala Bortle <A HREF="https://www.handprint.com/ASTRO/bortle.html"> aquí </A><br>       
+            <button class="boton" type="submit">Cambiar a Escala en magnitudes  </button> 
+    </form> 
+        
+            
+        <div id="cuadrotexto">
+            <p class="alinearizq"><b>Semana del <span id="demo"></span></b></p>
+            <H4 class="alinearder"><A   HREF="https://forms.gle/vxiWT2euzuVSM4f89"> Valorar aplicación </A></H4>
+        </div>
        
        <div class="rangeslider">
          <input type="range" min="1" max="100" value="1"

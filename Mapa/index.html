@@ -7,7 +7,7 @@
             L_DISABLE_3D = false;
         </script>
     
-    <style>html, body {width: 100%;height: 93.5%;margin:0;padding: 0.5%}</style>
+    <style>html, body {width: 100%;height: 93.0%;margin:0;padding: 0.5%}</style>
     <body style="background-color:#d2e4e4;"></body>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -68,21 +68,37 @@
         }
           
         </style>
+        <style>
+  
+       .alinearizq {
+          float: left;
+        }
+       .alinearder {
+         float: right;
+        }    
+        </style>
        
 </head>
 <body>    
      <section>  
         <form method="get" action="Bortle.html">
-            Este mapa ha sido elaborado en base a datos de satélite del VIIRS-DNB y de las redes de fotómetros de los proyectos EELabs y Star4all.     &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp      <button class="boton" type="submit">Cambiar a Escala Bortle  </button> 
+            Este mapa ha sido elaborado en base a datos de satélite del VIIRS-DNB y de las redes de fotómetros de los proyectos EELabs y Star4all. Puede consultar los datos de los fotómetros de forma más detallada <A aling="right" HREF="https://data.eelabs.eu/?device=LPL5_001"> aquí </A><br>      
+        <button class="boton" type="submit">Cambiar a Escala Bortle  </button>
         </form>      
-        Puede consultar los datos de los fotómetros de forma más detallada <A HREF="https://data.eelabs.eu/?device=LPL5_001"> aquí </A>  
-         <p><b>Semana del <span id="demo"></span></b></p> 
+        
+        <div id="cuadrotexto">
+            <p class="alinearizq"><b>Semana del <span id="demo"></span></b></p>
+            <H4 class="alinearder"><A   HREF="https://forms.gle/vxiWT2euzuVSM4f89"> Valorar aplicación </A></H4>
+          </div>
+
+         
        
        <div class="rangeslider">
          <input type="range" min="1" max="100" value="1"
                        class="myslider" id="sliderRange">
-         <p> </p> 
+        <p></p>
        </div>
+
        <script>
         
         //fetch('./personal.json')
